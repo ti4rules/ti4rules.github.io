@@ -15,7 +15,7 @@ module.exports = {
   },
   output: {
     path: path.resolve("../"),
-    filename: "js/[name].js",
+    filename: "js/[name].[contenthash].js",
     publicPath: "/"
   },
   resolve: {
@@ -62,7 +62,7 @@ module.exports = {
       jQuery: "jquery",
       Popper: ['popper.js', 'default']
     }),
-    new ExtractTextPlugin({filename: "css/app.css"}),
+    new ExtractTextPlugin({filename: "css/app.[hash].css"}),
     new CopyWebpackPlugin([{ from: "./images", to: "images" }]),
     new HtmlWebpackPlugin({
       template: 'index.html',
