@@ -9,8 +9,9 @@ module.exports = {
   entry: {
     main: ["@babel/polyfill", "./src/RulesSite.jsx"],
     board: ["@babel/polyfill", "./src/BoardSite.jsx"],
-    faq: ["@babel/polyfill", "./src/BoardSite.jsx"],
-    reference: ["@babel/polyfill", "./src/BoardSite.jsx"],
+    faq: ["@babel/polyfill", "./src/FAQSite.jsx"],
+    reference: ["@babel/polyfill", "./src/ReferenceSite.jsx"],
+    about: ["@babel/polyfill", "./src/AboutSite.jsx"],
   },
   output: {
     path: path.resolve("../"),
@@ -66,22 +67,32 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'index.html',
       filename: 'index.html',
+      title: 'TI4 Rules',
       chunks: ['main']
     }),
     new HtmlWebpackPlugin({
       template: 'index.html',
       filename: 'board.html',
+      title: 'TI4 Rules - Board Setup',
       chunks: ['board']
     }),
     new HtmlWebpackPlugin({
       template: 'index.html',
       filename: 'faq.html',
+      title: 'TI4 Rules - FAQ & Errata',
       chunks: ['faq']
     }),
     new HtmlWebpackPlugin({
       template: 'index.html',
       filename: 'reference.html',
+      title: 'TI4 Rules - Quick Reference',
       chunks: ['reference']
+    }),
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+      filename: 'about.html',
+      title: 'TI4 Rules - About',
+      chunks: ['about']
     }),
   ]
 };

@@ -6,7 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Nav from './Nav';
-import RulesPage from './reference/RulesPage';
+import RulesPage from './pages/RulesPage';
 
 ReactDOM.render(
   <div>

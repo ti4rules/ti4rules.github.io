@@ -6,12 +6,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Nav from './Nav';
-import BoardSetup from './pages/BoardSetup';
+import QuickReference from './pages/QuickReference';
 
 ReactDOM.render(
   <div>
     <Nav />
-    <BoardSetup />
+    <QuickReference />
   </div>,
   document.getElementById('root')
 );

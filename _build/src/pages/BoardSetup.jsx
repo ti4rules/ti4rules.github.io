@@ -2,7 +2,7 @@ import * as React from 'react';
 import { RuleSection } from './RuleComponents';
 
 export default () => (
-  <div>
+  <div className='container'>
     <h2>Board Setup</h2>
     <p>This section describes how to set up a game using all of the advanced rules. Note that some of these steps vary slightly from the “First-Game Setup” rules.</p>
 

@@ -13,7 +13,7 @@ export default ({ links, path }) => (
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav">
           <a href="/" className='nav-link'>Living Rules</a>
-          <a href="/faq" className='nav-link'>FAQ</a>
+          <a href="/faq" className='nav-link'>FAQ &amp; Errata</a>
           <a href="/board" className='nav-link'>Board Setup</a>
           <a href="/about" className='nav-link'>About</a>
         </ul>

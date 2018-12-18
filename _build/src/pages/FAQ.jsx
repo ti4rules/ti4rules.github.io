@@ -15,7 +15,7 @@ const Answer = ({ children }) => (
 )
 
 export default () => (
-  <div>
+  <div className='container'>
     <h2>Errata</h2>
     <RuleSection title='Hyper Metabolism (Technology)'>
       <p>The text of the “Hyper Metabolism” technology should read as follows: “During the status phase, gain <Errata>3</Errata> command tokens instead of <Errata>2</Errata>.”</p>

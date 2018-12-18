@@ -2,7 +2,7 @@ import * as React from 'react';
 import { RuleImageBlock, RuleSection } from './RuleComponents';
 
 export default () => (
-  <div>
+  <div className='container'>
     <h2>Quick Reference</h2>
     <div className='row'>
       <div className='col-sm'>

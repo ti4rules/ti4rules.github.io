@@ -4,6 +4,7 @@
 **/*.ez
 **/.DS_Store
 **/yarn-error.log
+**/*.map
 
 # Generated on crash by the VM
 **/erl_crash.dump

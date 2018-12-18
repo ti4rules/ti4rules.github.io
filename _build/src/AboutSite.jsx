@@ -6,12 +6,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Nav from './Nav';
-import BoardSetup from './pages/BoardSetup';
+import About from './pages/About';
 
 ReactDOM.render(
   <div>
     <Nav />
-    <BoardSetup />
+    <About />
   </div>,
   document.getElementById('root')
 );
