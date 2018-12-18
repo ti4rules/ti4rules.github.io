@@ -1,13 +1,17 @@
 const webpack = require("webpack");
 const path = require("path");
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'source-map',
-  entry: ["@babel/polyfill", "./src/site.jsx"],
+  entry: {
+    main: ["@babel/polyfill", "./src/RulesSite.jsx"],
+    board: ["@babel/polyfill", "./src/BoardSite.jsx"],
+    faq: ["@babel/polyfill", "./src/BoardSite.jsx"],
+    reference: ["@babel/polyfill", "./src/BoardSite.jsx"],
+  },
   output: {
     path: path.resolve("../"),
     filename: "js/[name].js",
@@ -52,9 +56,6 @@ module.exports = {
     historyApiFallback: true
   },
   plugins: [
-    // new UglifyJSPlugin({
-    //   sourceMap: true,
-    // }),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
@@ -65,6 +66,22 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'index.html',
       filename: 'index.html',
+      chunks: ['main']
+    }),
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+      filename: 'board.html',
+      chunks: ['board']
+    }),
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+      filename: 'faq.html',
+      chunks: ['faq']
+    }),
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+      filename: 'reference.html',
+      chunks: ['reference']
     }),
   ]
 };
