@@ -1,11 +1,10 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/nav.scss';
 
 export default ({ links, path }) => (
   <div className="navbar navbar-expand-lg navbar-dark bg-dark">
     <div className="container">
-      <Link to="/" className="navbar-brand Nav__brand"><img className='Nav__logo' src='/images/logo.svg' /> TI4 Rules</Link>
+      <a href="#rules" className="navbar-brand Nav__brand"><img className='Nav__logo' src='/images/logo.svg' /> TI4 Rules</a>
 
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
