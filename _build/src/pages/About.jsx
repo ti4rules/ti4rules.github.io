@@ -3,7 +3,7 @@ import * as React from 'react';
 export default () => (
   <div className="container">
     <h1>About TI4 rules</h1>
-    <p>This is a free tool to make it easier to find crucial rules why you play Twilight Imperium 4th Edition.</p>
+    <p>This is a free tool to make it easier to lookup and share the rules for Twilight Imperium 4th Edition.</p>
 
     <h4>Who made this?</h4>
 

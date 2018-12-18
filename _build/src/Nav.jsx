@@ -15,6 +15,7 @@ export default ({ links, path }) => (
           <a href="/" className='nav-link'>Living Rules</a>
           <a href="/faq" className='nav-link'>FAQ &amp; Errata</a>
           <a href="/board" className='nav-link'>Board Setup</a>
+          <a href="/reference" className='nav-link'>Quick Reference</a>
           <a href="/about" className='nav-link'>About</a>
         </ul>
       </div>
