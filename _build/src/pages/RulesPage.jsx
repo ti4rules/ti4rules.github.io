@@ -51,7 +51,6 @@ export default class RulesPage extends React.Component {
           
         </div>
         <div className='RulesPage'>
-          <a id="rules" className='RulesPage__anchor'></a>
           <h2>Living Rules</h2>
           <Rules search={this.state.search} />
         </div>
