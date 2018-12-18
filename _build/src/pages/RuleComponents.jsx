@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './rule-components.scss';
 
 export const RuleImageBlock = ({ images }) => (
   <div className='row RuleImageBlock'>

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { RuleSection, RuleText, RuleImageBlock } from './RuleComponents';
 import SearchFilter from './SearchFilter';
-import './rules.scss';
 
 export default ({ search }) => (
   <SearchFilter search={search}>

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { RuleSection } from './RuleComponents';
-import './faq.scss';
 
 const Errata = ({ children }) => (
   <span className='FAQ__errata'>{children}</span>

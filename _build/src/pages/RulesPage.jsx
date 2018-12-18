@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Rules from './Rules';
-import './rules-page.scss';
 
 export default class RulesPage extends React.Component {
   timeout = null;
