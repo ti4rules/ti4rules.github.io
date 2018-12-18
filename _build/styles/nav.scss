@@ -1,0 +1,10 @@
+@import './mixins.scss';
+
+.Nav__logo {
+  height: 20px;
+  vertical-align: sub !important;
+}
+
+.Nav__brand {
+  @include title-text;
+}

@@ -1,0 +1,193 @@
+@import "_superhero_variables";
+@import "~bootstrap/scss/bootstrap";
+@import "superhero";
+@import './mixins.scss';
+
+// site stuff goes here
+
+body {
+  padding-top: 60px;
+}
+
+h1 {
+  @include title-text;
+  font-size: 1.5em;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+$strategy-font-size-base: $font-size-base * .8;
+
+.strategy {
+  margin-bottom: $spacer * 2;
+}
+
+$number-circle-size: 50px;
+
+.strategy .card {
+  font-size: $strategy-font-size-base;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.strategy .card-header {
+  font-size: $strategy-font-size-base * 1.5;
+  text-align: center;
+}
+
+.strategy .strategy-number {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $number-circle-size;
+  text-align: center;
+  font-weight: 700;
+  font-size: $font-size-base * 2.2;
+  border-top-left-radius: 5px;
+}
+
+.strategy h4 {
+  font-size: $strategy-font-size-base * 1.2;
+  margin-bottom: $card-spacer-y * 0.5;
+}
+
+.strategy ul {
+  padding-inline-start: 20px;
+}
+
+.strategy .card-body {
+  padding: .5em;
+}
+
+.strategy ul {
+  margin-bottom: 0.8em;
+}
+
+.leadership .card-body{
+  // border: 2px solid #C63E24;
+}
+
+.leadership .strategy-number {
+  background-color: #C63E24;
+}
+
+.diplomacy {
+  // border: 2px solid #E2742E;
+  color: $text-muted * .8 !important;
+}
+
+.diplomacy .strategy-number {
+  // background-color: #E2742E;
+}
+
+.politics .card-header {
+   background-color: #F3B545 * .8;
+}
+
+.politics::after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border: 8px solid rgba(255,255,255,0.5);
+  border-radius: 10px;
+  z-index: -1000;
+}
+
+.politics .strategy-number {
+   background-color: #F3B545;
+}
+
+.construction {
+  border: 2px solid #4FA664;
+}
+
+.construction .strategy-number {
+  background-color: #4FA664;
+}
+
+.trade .card-header{
+  background-color: #4EAFA2;
+}
+
+.trade .strategy-number {
+  // background-color: #4EAFA2;
+}
+
+.warfare {
+  border: 2px solid #3E93D0;
+}
+
+.warfare .strategy-number {
+  background-color: #3E93D0;
+}
+
+.warfare .card-body {
+  color: rgba(255,255,255,0.6) !important;
+}
+
+.technology .card-header {
+  // border: 2px solid #0E347D;
+  background-color: #0E347D;
+}
+
+.technology .card-body {
+  color: $text-muted * .8 !important;
+}
+
+.technology .strategy-number {
+  // background-color: #0E347D;
+}
+
+.imperial {
+  border: 2px solid #5F2895;
+}
+
+.imperial .card-body {
+  color: $text-muted * .8 !important;
+}
+
+.imperial .strategy-number {
+  background-color: #5F2895;
+}
+
+.used {
+  position: absolute;
+  top: 35%;
+  left: 10%; //need to figure out how to center this
+  // color: rgba(255,255,255,0.4);
+  color: rgba(0,0,0,.5);
+  font-size: 80px;
+  pointer-events: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  text-transform: uppercase;
+}
+
+.strategy .card-body {
+  position: relative;
+}
+
+.strategy .badge {
+  font-size: 1.1em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.strategy .trade-goods {
+  color: #fff;
+  padding: 2px;
+  padding-left: 10px;
+  background-color: rgba(0,0,0,0.2);
+  border-top: 1px solid rgba(255,255,255,0.7);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.strategy .trade-goods img {
+  height: 15px;
+}

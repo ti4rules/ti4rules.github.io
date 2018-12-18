@@ -1,0 +1,15 @@
+# App artifacts
+**/db
+**/deps
+**/*.ez
+**/.DS_Store
+**/yarn-error.log
+
+# Generated on crash by the VM
+**/erl_crash.dump
+
+# Generated on crash by NPM
+**/npm-debug.log
+
+# Static artifacts
+**/node_modules

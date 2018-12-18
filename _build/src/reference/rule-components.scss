@@ -1,0 +1,62 @@
+.RuleSection__heading {
+  border-top: 1px solid rgba(255,255,255,0.8);
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0.1);
+  padding: 0.2em;
+  padding-right: 3em;
+}
+
+.RuleText__text-lead {
+  margin-bottom: 0em;
+}
+
+.RuleText__subheading {
+  text-transform: uppercase;
+}
+
+.RuleNumber {
+  display: inline-block;
+  margin-right: 10px;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.75em;
+}
+
+.RuleNumber__anchor {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
+
+.RuleNumber__decoration {
+  position: absolute;
+  margin-left: -1em;
+  margin-right: 0.5em;
+  display: none;
+}
+
+.RuleNumber:hover, .RuleNumber:hover .RuleNumber__decoration {
+  color: #fff;
+  font-weight: bolder;
+}
+
+.RuleNumber:hover .RuleNumber__decoration {
+  display: inline;
+}
+
+.RuleSection__heading-match, .RuleText__subheading-match {
+  text-decoration: underline;
+}
+
+.RuleNumber-match {
+  background-color: #ffff00;
+  color: #000;
+}
+
+.RuleImageBlock {
+  text-align: center;
+}
+
+.RuleImageBlock__image {
+    max-width: 50px;
+}

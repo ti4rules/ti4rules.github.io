@@ -1,0 +1,12 @@
+@mixin title-text {
+  text-transform: uppercase;
+  display: inline-block;
+  padding-top: 0.3359375rem;
+  padding-bottom: 0.3359375rem;
+  margin-right: 1rem;
+  font-size: 1.09375rem;
+  line-height: inherit;
+  white-space: nowrap;
+  font-weight: 400;
+  letter-spacing: 2px;	
+}
