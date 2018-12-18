@@ -2,7 +2,7 @@ import * as React from 'react';
 import '../styles/nav.scss';
 
 export default ({ links, path }) => (
-  <div className="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <div className="container">
       <a href="#rules" className="navbar-brand Nav__brand"><img className='Nav__logo' src='/images/logo.svg' /> TI4 Rules</a>
 

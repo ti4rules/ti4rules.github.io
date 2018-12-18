@@ -6,12 +6,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Nav from './Nav';
-import Rules from './reference/Rules';
+import RulesPage from './reference/RulesPage';
 
 ReactDOM.render(
   <div>
     <Nav />
-    <Rules />
+    <RulesPage />
   </div>,
   document.getElementById('root')
 );

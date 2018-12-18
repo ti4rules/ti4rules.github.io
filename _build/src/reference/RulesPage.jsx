@@ -40,7 +40,7 @@ export default class RulesPage extends React.Component {
     const buttonClass = isSearching ? 'btn-secondary' : 'btn-outline-secondary';
 
     return (
-      <div>
+      <div className='container'>
         <div className='row RulesPageNav'>
           <div className="input-group mb-3">
             <input autoFocus={true} type='search' className='form-control RulesPageNav__search' placeholder='Smart Search (section titles and rule numbers)' onChange={this.onChange} ref={this.searchInput} />
@@ -51,6 +51,7 @@ export default class RulesPage extends React.Component {
           
         </div>
         <div className='RulesPage'>
+          <a id="rules" className='RulesPage__anchor'></a>
           <h2>Living Rules</h2>
           <Rules search={this.state.search} />
         </div>

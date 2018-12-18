@@ -6619,5 +6619,86 @@ h1 {
 
 .strategy .trade-goods img {
   height: 15px; }
+.Nav__logo {
+  height: 20px;
+  vertical-align: sub !important; }
 
-/*# sourceMappingURL=app.93a1e3140ce0b475833f.css.map*/
+.Nav__brand {
+  text-transform: uppercase;
+  display: inline-block;
+  padding-top: 0.3359375rem;
+  padding-bottom: 0.3359375rem;
+  margin-right: 1rem;
+  font-size: 1.09375rem;
+  line-height: inherit;
+  white-space: nowrap;
+  font-weight: 400;
+  letter-spacing: 2px; }
+.RuleSection__heading {
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.2em;
+  padding-right: 3em; }
+
+.RuleText__text-lead {
+  margin-bottom: 0em; }
+
+.RuleText__subheading {
+  text-transform: uppercase; }
+
+.RuleNumber {
+  display: inline-block;
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75em; }
+
+.RuleNumber__anchor, .RulesPage__anchor {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden; }
+
+.RuleNumber__decoration {
+  position: absolute;
+  margin-left: -1em;
+  margin-right: 0.5em;
+  display: none; }
+
+.RuleNumber:hover, .RuleNumber:hover .RuleNumber__decoration {
+  color: #fff;
+  font-weight: bolder; }
+
+.RuleNumber:hover .RuleNumber__decoration {
+  display: inline; }
+
+.RuleSection__heading-match, .RuleText__subheading-match {
+  text-decoration: underline; }
+
+.RuleNumber-match {
+  background-color: #ffff00;
+  color: #000; }
+
+.RuleImageBlock {
+  text-align: center; }
+
+.RuleImageBlock__image {
+  max-width: 50px; }
+.RuleText__ul-hyphen li {
+  list-style-image: url(/images/bullet-hyphen.svg); }
+.RulesPageNav {
+  border-bottom: 1px solid #5bc0de;
+  margin: 0px;
+  padding-top: 0.4em;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.25em;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 44px;
+  background-color: #2B3E50;
+  z-index: 1000; }
+
+.RulesPageNav__search::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button; }
+
+/*# sourceMappingURL=app.css.map*/

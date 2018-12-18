@@ -10,7 +10,7 @@ module.exports = {
   entry: ["@babel/polyfill", "./src/site.jsx"],
   output: {
     path: path.resolve("../"),
-    filename: "js/[name].[contenthash].js",
+    filename: "js/[name].js",
     publicPath: "/"
   },
   resolve: {
@@ -60,7 +60,7 @@ module.exports = {
       jQuery: "jquery",
       Popper: ['popper.js', 'default']
     }),
-    new ExtractTextPlugin({filename: "css/app.[hash].css"}),
+    new ExtractTextPlugin({filename: "css/app.css"}),
     new CopyWebpackPlugin([{ from: "./images", to: "images" }]),
     new HtmlWebpackPlugin({
       template: 'index.html',
