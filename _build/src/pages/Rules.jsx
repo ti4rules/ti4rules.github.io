@@ -812,7 +812,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
 
     <RuleSection
       number='48'
-      title='Nove (Attribute)'
+      title='Move (Attribute)'
       related={['Movement', 'Tactical Action']}>
       <RuleText>Move is an attribute of some units that is presented on those units’ faction sheets and technology cards.</RuleText>
       <RuleText number='48.1'>A unit’s move value indicates the distance from its current system that it can move during the “Movement” step of a tactical action.</RuleText>
@@ -1371,7 +1371,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       <RuleText>A structure is a type of unit. PDS units and space docks are structures.</RuleText>
       <RuleText number='74.1'>Structures are always placed on planets.
         <ul>
-          <li>The Clan of Saar’s “Floating Factory” faction-specific space dock is placed in a system’s space areaa</li>
+          <li>The Clan of Saar’s “Floating Factory” faction-specific space dock is placed in a system’s space area</li>
         </ul>
       </RuleText>
       <RuleText number='74.2'>Structures are primarily placed on planets using the “Construction” strategy card.</RuleText>
