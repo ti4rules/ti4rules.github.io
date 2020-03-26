@@ -94,7 +94,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
           <li>Multiple action cards with the same name cannot be played during a single timing window to affect the same units or game effect. Canceled cards do not count as being played.</li>
         </ul>
       </RuleText>
-      <RuleText number='2.7'>'To play an action card, a player reads and resolves the card’s ability text, making any decisions as prompted by the card. Then, he discards the card, placing it in the action discard pile.</RuleText>
+      <RuleText number='2.7'>To play an action card, a player reads and resolves the card’s ability text, making any decisions as prompted by the card. Then, he discards the card, placing it in the action discard pile.</RuleText>
       <RuleText number='2.8'>If an action card is canceled, that card has no effect and is discarded.</RuleText>
       <RuleText number='2.9'>During the action phase, if two or more action cards or other abilities would be resolved during the same timing window, players should use the timing rules on page 4 to determine the correct order of resolution.</RuleText>
       <RuleText number='2.10'>During the strategy and agenda phases, if two or more action cards or other abilities would be resolved during the same timing window, players should use the timing rules on page 4 to determine the correct order of resolution.</RuleText>
