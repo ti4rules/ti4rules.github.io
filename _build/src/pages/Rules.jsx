@@ -26,7 +26,11 @@ export default ({ search }) => (
       related={['Action Cards', 'Promissory Notes', 'Strategy Card', 'Technology']}>
       <RuleText>Cards and faction sheets each have abilities that players can resolve to trigger various game effects.</RuleText>
 
-      <RuleText number='1.1'>Each ability describes when and how a player can resolve it.</RuleText>
+      <RuleText number='1.1'>Each ability describes when and how a player can resolve it.
+        <ul>
+          <li>If an ability with a specified duration is resolved, the effect of the ability remains through that duration, even if the component that caused the ability is removed.</li>
+        </ul>
+      </RuleText>
       <RuleText number='1.2'>If a card has multiple abilities, each ability is presented as its own paragraph.</RuleText>
       <RuleText number='1.3'>If an ability contains the word “Action,” a player must use a component action during the action phase to resolve that ability.</RuleText>
       <RuleText number='1.4'>If an ability uses the word “cannot,” that effect is absolute.</RuleText>
@@ -44,12 +48,12 @@ export default ({ search }) => (
         </ul>
       </RuleText>
       <RuleText number='1.13'>If the timing of an ability uses the word “when,” the ability’s effect occurs at the moment of the described timing event.
-      <ul>
+        <ul>
           <li>Such an ability typically modifies or replaces the timing event in some way.</li>
         </ul>
       </RuleText>
       <RuleText number='1.14'>Effects that occur “when” an event happens take priority over effects that occur “after” an event happens.</RuleText>
-      <RuleText number='1.15'>If an ability uses the word “then,” a player must resolve the effect that occurs before the word “then” before resolving the effect that occurs after the word “then.”</RuleText>
+      <RuleText number='1.15'>If an ability uses the word “then,” a player must resolve the effect that occurs before the word “then” or he cannot resolve the effect that occurs after the word “then.”</RuleText>
       <RuleText number='1.16'>Each ability can be resolved once for each occurrence of that ability’s timing event. For example, if an ability is resolved “At the start of combat,” it can be resolved at the start of each combat.</RuleText>
       <RuleText number='1.17' subheading='Component-Specific Rules' />
       <RuleText number='1.18'>The opening paragraph of each ability found on an action card describes when a player can resolve that card’s ability.</RuleText>
@@ -220,7 +224,11 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       <RuleText number='8.16'>If a player cannot vote on an agenda because of a game effect, he cannot cast votes for that agenda by exhausting planets or through any other game effect.</RuleText>
       <RuleText number='8.17' subheading='Outcomes' />
       <RuleText number='8.18'>To resolve an outcome, the speaker follows the instructions on the agenda card.</RuleText>
-      <RuleText number='8.19'>If there is a tie for the outcome that received the most votes, the speaker decides which of the tied outcomes to resolve.</RuleText>
+      <RuleText number='8.19'>If there is a tie for the outcome that received the most votes, or if no outcome receives any votes, the speaker decides which of the tied outcomes to resolve.
+        <ul>
+          <li>The speaker’s decision is not a vote.</li>
+        </ul>
+      </RuleText>
       <RuleText number='8.20'>If an “Elect” or “For” outcome of a law was resolved, that card remains in play and permanently affects the game.</RuleText>
       <RuleText number='8.21'>If a directive or an “against” outcome of a law was resolved, that card is placed in the agenda discard pile.</RuleText>
       <RuleText number='8.22'>Some game effects instruct a player to predict an outcome. To predict an outcome, a player declares aloud the outcome he thinks will receive the most votes. He must make this prediction after the agenda is revealed but before any votes have been cast.
@@ -252,7 +260,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       number='10'
       title='Anti-Fighter Barrage (Unit Ability)'
       related={['Destroyed', 'Space Combat']}>
-      <RuleText>A unit with the “Anti-Fighter Barrage” ability may be able to destroy an opponent’s fighters at the start of the first round of a space combat. During the “Anti-Fighter Barrage” step of space combat, players perform the following steps:</RuleText>
+      <RuleText>A unit with the “Anti-Fighter Barrage” ability may be able to destroy an opponent’s fighters at the onset of a battle. During the “Anti-Fighter Barrage” step of the first round of space combat, players perform the following steps:</RuleText>
       <RuleText number='10.1'>STEP 1—Each player rolls dice for each of his units in the combat that has the “Anti-Fighter Barrage” ability; this is called an anti-fighter barrage roll. A hit is produced for each die roll that is equal to or greater than the unit’s anti-fighter barrage value.
         <ul>
           <li>If a unit has an “Anti-Fighter Barrage” ability, it is presented on its faction sheet and technology cards.</li>
@@ -281,7 +289,11 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       related={['Agenda Card', 'Control', 'Planets']}>
       <RuleText>Some game effects instruct a player to attach a card to a planet card. A card that is attached to a planet card modifies that planet card in some way.</RuleText>
       <RuleText number='12.1'>To attach a card to a planet card, a player places the card with the attach effect partially underneath the planet card.</RuleText>
-      <RuleText number='12.2'>If a player gains or loses control of planet that contains a card with an attach effect, the attached card stays with that planet.</RuleText>
+      <RuleText number='12.2'>If a player gains or loses control of planet that contains a card with an attach effect, the attached card stays with that planet.
+        <ul>
+          <li>The attached card maintains its exhausted or readied state.</li>
+        </ul>
+      </RuleText>
 
     </RuleSection>
 
@@ -332,7 +344,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       <RuleText number='16.3'>If a player has more fighters and ground forces in the space area of a system than the total capacity of his ships in that system, he must destroy the excess units of his choice.
         <ul>
           <li>Ground forces on planets do not count against capacity.</li>
-          <li>A player’s fighters and ground forces can exceed capacity during combat. At the end of combat, he must destroy the excess units.</li>
+          <li>A player’s fighters and ground forces do not count against capacity during combat. At the end of combat, he must destroy the excess units.</li>
         </ul>
       </RuleText>
       <RuleText number='16.4'>Fighters and ground forces are not assigned to specific ships, except while they are being transported.</RuleText>
@@ -372,7 +384,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       <RuleText number='19.3'>A player is limited by the amount of command tokens in his reinforcements.
         <ul>
           <li>If he would gain a command token but has none available in his reinforcements, he cannot gain that command token.</li>
-          <li>If a game effect would place a player’s command token onto the board from his reinforcements and none are available, he must take a token from one of the pools on his command sheet.</li>
+          <li>If a game effect would place a player’s command token onto the board from his reinforcements and none are available, he must take a token from one of the pools on his command sheet, unless the system already contains one of his command tokens.</li>
         </ul>
       </RuleText>
       <RuleText number='19.4'>During the action phase, a player can perform a tactical action by spending a command token from his tactic pool; he places the command token in a system.</RuleText>
@@ -432,7 +444,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       <RuleText number='22.3'>If any of the above tokens are depleted, players can use a suitable substitute, such as a coin or bead.</RuleText>
       <RuleText number='22.4'>UNITS: Units are limited to those included in the game, except for fighters and ground forces.
         <ul>
-          <li>When placing units, if a player does not have enough units in his reinforcements, he can remove units from any systems that do not contain one of his command tokens and place them in his reinforcements. Then, he can place any units that he removed. He cannot remove units in this way unless he is immediately placing a unit of that type.</li>
+          <li>When placing units, if a player does not have enough units in his reinforcements, he can remove units from any systems that do not contain one of his command tokens and place them in his reinforcements. Then, he can place any units that he removed. He cannot remove units in this way unless he is immediately placing a unit of that type. Abilities cannot force a player to remove and place a unit in this manner.</li>
           <li>When producing a fighter or infantry unit, a player can use a fighter or infantry token, as appropriate, from the supply instead of a plastic piece. These tokens must be accompanied by at least one plastic piece of the same type; players can swap infantry and fighter tokens for plastic pieces at any time.</li>
         </ul>
       </RuleText>
@@ -519,7 +531,11 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       <RuleText>A deal is an agreement between two players that may or may not include a transaction that involves physical components.</RuleText>
       <RuleText number='27.1'>Players can make deals with each other at any time, even if they are not neighbors. However, deals that include a transaction must follow the rules for transactions, including that the players be neighbors.</RuleText>
       <RuleText number='27.2'>Deals are binding or non-binding according to the conditions of the deal.</RuleText>
-      <RuleText number='27.3'>If the terms of a deal can be resolved immediately, it is a binding deal. When a deal is binding, a player must adhere to the terms of the agreement and whatever transactions, if any, were agreed upon.</RuleText>
+      <RuleText number='27.3'>If the terms of a deal can be resolved immediately, it is a binding deal. When a deal is binding, a player must adhere to the terms of the agreement and whatever transactions, if any, were agreed upon.
+        <ul>
+          <li>The results of playing an action card, including the act of successfully resolving a card, are not instantaneous and cannot be guaranteed. They cannot be part of a binding deal.</li>
+        </ul>
+      </RuleText>
       <RuleText number='27.4'>If the terms of a deal cannot be resolved immediately, it is a non- binding deal. When a deal is non-binding, a player does not have to adhere to any part of the agreement if he chooses not to.</RuleText>
     </RuleSection>
 
@@ -573,6 +589,18 @@ secondary abilities of the “Politics” strategy card.</RuleText>
           <li>Promissory notes that match the eliminated player are returned to the game box, even if another player has them.</li>
         </ul>
       </RuleText>
+      <RuleText number='31.5'>When a player becomes eliminated, all action cards in his handare discarded.</RuleText>
+      <RuleText number='31.6'>When a player becomes eliminated, his strategy cards arereturned to the common play area whether they have been exhausted or not.</RuleText>
+      <RuleText number='31.7'>When a player becomes eliminated, his secret objectives are shuffled back into the secret objective deck whether they have been completed or not.</RuleText>
+      <RuleText number='31.8'>If the speaker becomes eliminated, the speaker token passes to the player to his left.</RuleText>
+      <RuleText number='31.9'>If a game that started with five or more players becomes a game with four or fewer players due to elimination, the players continue to select only one strategy card during the strategy phase.</RuleText>
+      <RuleText number='31.10'>When players are eliminated, faction-specific tokens interact with the game as follows:
+        <ul>
+          <li>If a player becomes eliminated and the Nekro Virus’ assimilator “X” or assimilator “Y” token is placed on one of his faction technologies, that technology remains in play.</li>
+          <li>If the Ghost of Creuss player becomes eliminated, his wormhole tokens remain on the game board for the remainder of the game.</li>
+          <li>If the Naalu player becomes eliminated while another player has the Naalu player’s “0” token, that token remains with its current player until the end of the status phase, and then it is removed from play.</li>
+        </ul>
+      </RuleText>
     </RuleSection>
 
     <RuleSection
@@ -583,7 +611,11 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       <RuleText number='32.1'>To exhaust a card, a player flips the card facedown.</RuleText>
       <RuleText number='32.2'>During the “Ready Cards” step of the status phase, each player readies all of his exhausted cards by flipping them faceup.</RuleText>
       <RuleText number='32.3'>A player exhausts his planet cards to spend either the resources or influence on that card.</RuleText>
-      <RuleText number='32.4'>Abilities, including some found on technology cards, may instruct a player to exhaust a card to resolve those abilities. If a card is already exhausted, it cannot be exhausted again.</RuleText>
+      <RuleText number='32.4'>Abilities, including some found on technology cards, may instruct a player to exhaust a card to resolve those abilities. If a card is already exhausted, it cannot be exhausted again.
+        <ul>
+          <li>Passive abilities on an exhausted card are still in effect while that card is exhausted.</li>
+        </ul>
+      </RuleText>
       <RuleText number='32.5'>After a player performs a strategic action, he exhausts the strategy card that corresponds to that action.</RuleText>
     </RuleSection>
 
@@ -610,10 +642,16 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       <RuleText number='34.1'>The number of command tokens in a player’s fleet pool indicates the maximum number of non-fighter ships that a player can have in a system.
         <ul>
           <li>Units that are on planets or are being transported by a ship with capacity do not count against a player’s fleet pool.</li>
+          <li>Units that are moving through systems do not count against a player’s fleet pool in those systems.</li>
         </ul>
       </RuleText>
       <RuleText number='34.2'>Players place command tokens in their fleet pools with the ship silhouette faceup.</RuleText>
-      <RuleText number='34.3'>If at any time the number of a player’s ships in a system exceeds the number of tokens in his fleet pool, he chooses and destroys excess ships in that system.</RuleText>
+      <RuleText number='34.3'>If at any time, the number of a player’s ships in a system exceeds the number of tokens in his fleet pool, he chooses and removes excess ships in that system, returning them to his reinforcements.
+      <ul>
+        <li>Units that are on planets or are being transported by a ship with capacity do not count against a player’s fleet pool.</li>
+        <li>Units that are moving through systems do not count against a player’s fleet pool in those systems.</li>
+      </ul>
+      </RuleText>
       <RuleText number='34.4'>Players do not spend command tokens from this pool.</RuleText>
     </RuleSection>
 
@@ -652,10 +690,11 @@ secondary abilities of the “Politics” strategy card.</RuleText>
           <li>This can allow a ship to reach the active system from farther away than it normally could.</li>
         </ul>
       </RuleText>
-      <RuleText number='37.2'>For each ship that moves out of or through a gravity rift, one die is rolled immediately before the “Move Ships” step ends (after those ships have moved into the active system); on a result of 1–3, that ship is destroyed.
+      <RuleText number='37.2'>For each ship that would move out of or through a gravity rift, one die is rolled immediately before it exits the gravity rift system; on a result of 1–3, that ship is removed from the board.
         <ul>
           <li>Dice are not rolled for units that are being transported by ships with capacity.</li>
-          <li>Units that are being transported are destroyed if the ship transporting them is destroyed.</li>
+          <li>Units that are being transported are removed from the board if the ship transporting them is removed from the board.</li>
+          <li>Units that are removed are returned to the player’s reinforcements.</li>
         </ul>
       </RuleText>
     </RuleSection>
@@ -740,7 +779,11 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       title='Initiative Order'
       related={['Action Phase', 'Strategy Card', 'Status Phase']}>
       <RuleText>Initiative order is the order in which players resolve steps of the action and status phases.</RuleText>
-      <RuleText number='43.1'>Initiative order is determined by the initiative numbers on strategy cards.</RuleText>
+      <RuleText number='43.1'>Initiative order is determined by the initiative numbers on strategy cards.
+        <ul>
+          <li>A player who has the Naalu “0” token has the initiative number 0.</li>
+        </ul>
+      </RuleText>
       <RuleText number='43.2'>Initiative order begins with the player who has the lowest- numbered strategy card and proceeds to the player who has the strategy card that is next in numerical order.
         <ul>
           <li>Only strategy cards that were chosen during the strategy phase are used when determining initiative order; strategy cards not chosen during the strategy phase are ignored.</li>
@@ -837,7 +880,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
         </ul>
       </RuleText>
       <RuleText number='49.5'>When a ship with a capacity value moves or is moved, it may transport ground forces and fighters.</RuleText>
-      <RuleText number='49.6'>The active player’s ships move simultaneously.</RuleText>
+      <RuleText number='49.6'>The active player declares which of his ships are moving before any ships move. Those ships arrive in the active system simultaneously.</RuleText>
       <RuleText number='49.7'>STEP 2—SPACE CANNON OFFENSE: After the “Move Ships” step, players can use the “Space Cannon” abilities of their units in the active system.</RuleText>
       <RuleText number='49.8' subheading='Ability Movement' />
       <RuleText number='49.9'>If an ability moves a unit outside of the “Movement” step of a tactical action, players follow the rules specified by that ability; neither a unit’s move value nor the rules specified above apply.</RuleText>
@@ -891,7 +934,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
         </ul>
       </RuleText>
       <RuleText number='52.6'>A player can score a maximum of one public objective and one secret objective during each status phase.</RuleText>
-      <RuleText number='52.7'>A player can score any number of objectives during a turn of the action phase; however, he can only score one objective during each combat.
+      <RuleText number='52.7'>A player can score any number of objectives during a turn of the action phase; however, he can only score one objective during or after each combat.
         <ul>
           <li>A player can score an objective during both the space combat and the ground combat during the same tactical action.</li>
         </ul>
@@ -1155,8 +1198,8 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       related={['Active System', 'Attacker', 'Defender', 'Destroyed', 'Invasion', 'Sustain Damage', 'Movement', 'Tactical Action']}>
       <RuleText>A unit that has the “Space Cannon” ability can use it during two different steps of a player’s tactical action: after the “Move Ships” substep (Space Cannon Offense) and during an invasion (Space Cannon Defense).</RuleText>
       <RuleText number='66.1'>A player is not required to be the active player to use the “Space Cannon” abilities of his units.</RuleText>
-      <RuleText number='66.2' subheading='Space Cannon Offense'> During a tactical action, after the “Move Ships” substep of the “Movement” step, players can resolve the “Space Cannon” abilities of their units by performing the following steps:</RuleText>
-      <RuleText number='66.3'>STEP 1— Beginning with the active player and proceeding clockwise, each player may use the “Space Cannon” ability of each of his units in the active system by rolling a specific number of dice for each of those units; these are called space cannon rolls. A hit is produced for each die roll that is equal to or greater than the unit’s “Space Cannon” value.
+      <RuleText number='66.2' subheading='Space Cannon Offense'> During a tactical action, after the “Move Ships” substep of the “Movement” step, beginning with the active player and proceeding clockwise, each player may use the “Space Cannon” ability of each of his units in the active system by performing the following steps:</RuleText>
+      <RuleText number='66.3'>STEP 1—ROLL DICE: The player rolls dice for each of his units in the active system that has the “Space Cannon” ability; this is a space cannon roll. One hit is produced for each result that is equal to or greater than the unit’s “Space Cannon” value.
         <ul>
           <li>If a unit has a “Space Cannon” ability, it is present on its faction sheet and technology cards.</li>
           <li>“Space Cannon” is displayed as “Space Cannon X (Y).” The X is the minimum value needed for a die to produce a hit, and Y is the number of dice rolled. Not all “Space Cannon” abilities are accompanied by a (Y) value; a space cannon roll for such a unit consists of one die.</li>
@@ -1165,13 +1208,14 @@ secondary abilities of the “Politics” strategy card.</RuleText>
         </ul>
       </RuleText>
       <RuleText number='66.4'>This ability can be used even if no ships were moved during the “Move Ships” step.</RuleText>
-      <RuleText number='66.5'>STEP 2—The active player must choose and destroy one of his ships in the active system for each hit result produced against his units.
+      <RuleText number='66.5'>STEP 2—ASSIGN HITS: The player whose units have been targeted by “Space Cannon” must choose and destroy one of his ships in the active system for each hit result produced against his units. 
         <ul>
+          <li>Players other than the active player must target the active player’s units.</li>
           <li>If the active player is using the “Space Cannon” ability of his units, he chooses a player who has ships in the active system. That player must choose and destroy one of his ships in the active system for each hit the space cannon roll produced.</li>
         </ul>
       </RuleText>
       <RuleText number='66.6' subheading='Space Cannon Defense'> During the invasion step of a tactical action, after ground forces have been committed to land on planets, players other than the active player can resolve the “Space Cannon” abilities of their units on those planets by performing the following these steps:</RuleText>
-      <RuleText number='66.7'>STEP 1—Each player may use the “Space Cannon” ability of each of his units on the invaded planet by rolling a specific number of dice for each of those units; this is called a space cannon roll. A hit is produced for each die roll that is equal to or greater than the unit’s “Space Cannon” value.
+      <RuleText number='66.7'>STEP 1—ROLL DICE: Each player may use the “Space Cannon” ability of each of his units on the invaded planet by rolling a specific number of dice for each of those units; this is called a space cannon roll. A hit is produced for each die roll that is equal to or greater than the unit’s “Space Cannon” value.
         <ul>
           <li>If a unit has a “Space Cannon” ability, it is present on its faction sheet and technology cards.</li>
           <li>“Space Cannon” is displayed as “Space Cannon X (Y).” The X is the minimum value needed for a die to produce a hit, and Y is the number of dice rolled. Not all “Space Cannon” abilities are accompanied by a (Y) value; a space cannon roll for such a unit consists of one die.</li>
@@ -1179,7 +1223,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
           <li>Game effects that allow the use of “Space Cannon” abilities against ships in adjacent systems have no effect during Space Cannon Defense.</li>
         </ul>
       </RuleText>
-      <RuleText number='66.8'>STEP 2—The active player must choose and destroy one of his ground forces on the planet for each hit the space cannon roll produced.
+      <RuleText number='66.8'>STEP 2—ASSIGN HITS: The active player must choose and destroy one of his ground forces on the planet for each hit the space cannon roll produced.
         <ul>
           <li>Hits can only be assigned to units that were committed to the same planet as the units using the “Space Cannon” ability.</li>
         </ul>
@@ -1204,7 +1248,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
         <ul>
           <li>A retreat will not occur immediately; the units will retreat during the “Retreat” step.</li>
           <li>If the defender announces a retreat, the attacker cannot announce a retreat during that combat round.</li>
-          <li>If a player wishes to retreat with any of his ground forces that are on planets he controls in the active system, he may place those units in the space area of the active system during this step.</li>
+          <li>A player cannot announce a retreat if there is not at least one eligible system to retreat to.</li>
         </ul>
       </RuleText>
       <RuleText number='67.5'>STEP 3—ROLL DICE: Each player rolls one die for each ship he has in the active system; this is called a combat roll. If a unit’s combat roll produces a result that is equal to or greater than that unit’s combat value, that result produces a hit.
@@ -1225,16 +1269,16 @@ secondary abilities of the “Politics” strategy card.</RuleText>
           <li>When a unit is destroyed, the player who controls that unit removes it from the board and places it in his reinforcements.</li>
         </ul>
       </RuleText>
-      <RuleText number='67.7'>STEP 5—RETREAT: If a player announced a retreat during the first step of a combat, he must retreat.
+      <RuleText number='67.7'>STEP 5—RETREAT: If a player announced a retreat during the first step of a combat, and there is still an eligible system for his units to retreat to, he must retreat.
         <ul>
           <li>If a player announced a retreat during the “Announce Retreats” step and if his opponent has no ships left in the system, the combat immediately ends and the retreat does not occur.</li>
-          <li>To retreat, a player takes all of his ships in the combat that have a move value and moves them to an adjacent system. Fighters and ground forces in the active system that are unable to move or be transported are destroyed</li>
+          <li>To retreat, a player takes all of his ships in the combat that have a move value and moves them to an adjacent system. That player’s fighters and ground forces in the space area of the active system that are unable to move or be transported are destroyed.</li>
           <li>The system that a player’s units retreat to must contain one or more of his units, a planet he controls, or both. Additionally, the system cannot contain ships controlled by another player.</li>
-          <li>After retreating, a player must place a command token from his reinforcements in the system to which he retreated. If that system already contains one of his command tokens, he does not place an additional token there. If the player has no command tokens in his reinforcements, he must use one from his command sheet instead.</li>
+          <li>If any units successfully retreat and are moved into an adjacent system, the player must place a command token from his reinforcements in the system to which he retreated. If that system already contains one of his command tokens, he does not place an additional token there. If the player has no command tokens in his reinforcements, he must use one from his command sheet instead.</li>
         </ul>
       </RuleText>
       <RuleText number='67.8'>After the “Retreat” step, if both players still have ships in the active system, they resolve another round of space combat beginning with the “Announce Retreats” step.</RuleText>
-      <RuleText number='67.9'>Space combat ends immediately when only one player—or neither player—has a ship in the active system.
+      <RuleText number='67.9'>Space combat ends immediately when only one player—or neither player—has a ship in the space area of the in the active system.
         <ul>
           <li>“End of combat” and “end of combat round” effects still occur.</li>
         </ul>
@@ -1272,6 +1316,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       <RuleText number='69.4'>During the status phase, the speaker reveals a public objective.</RuleText>
       <RuleText number='69.5'>A random player gains the speaker token during setup before the game begins.</RuleText>
       <RuleText number='69.6'>During the action phase, if a player resolves the primary ability on the “Politics” strategy card, he chooses any player other than the current speaker to gain the speaker token.</RuleText>
+      <RuleText number='69.7'>If the speaker is eliminated from the game, the speaker token is passed to the player to his left.</RuleText>
     </RuleSection>
 
     <RuleSection
@@ -1589,7 +1634,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
         </ul>
       </RuleText>
       <RuleText number='83.5'>Players can resolve a transaction as part of a deal.</RuleText>
-      <RuleText number='83.6'>While resolving each of the two agendas during the agenda phase, a player may perform one transaction with each other player, even if those players are not his neighbors.</RuleText>
+      <RuleText number='83.6'>While resolving each agenda during the agenda phase, a player may perform one transaction with each other player, even if those players are not his neighbors.</RuleText>
     </RuleSection>
 
     <RuleSection
@@ -1600,6 +1645,8 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       <RuleText number='84.1'>The ship can pick up and transport fighters and ground forces when it moves. During a tactical action, it can pick up and transport units from the active system, the system it started its movement in, and each system it moves through.
         <ul>
           <li>These transported units can only be dropped off in the active system.</li>
+          <li>These transported units remain with the transporting ship until it is finished moving.</li>
+          <li>Units being transported by a ship that is removed from the board by a gravity rift are also removed from the board.</li>
         </ul>
       </RuleText>
       <RuleText number='84.2'>Any fighters and ground forces that a ship transports must move with the ship and remain in the space area of a system.</RuleText>
@@ -1651,7 +1698,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       </RuleText>
       <RuleText number='87.5'>If an ability refers to the player with the “most” or “fewest” victory points, and more than one player is tied in that respect, the effect applies to all of the tied players.</RuleText>
       <RuleText number='87.6'>If a player gains a victory point from a law, and that law is discarded, he does not lose that victory point.</RuleText>
-      <RuleText number='87.7'>The game ends immediately when one player has 10 victory points. If multiple players would simultaneously reach 10 victory points during the status or agenda phase, the player who is nearest the speaker in clockwise order is the winner.</RuleText>
+      <RuleText number='87.7'>The game ends immediately when one player has 10 victory points. If multiple players would simultaneously gain their 10th victory point, the player who is earliest in initiative order among those players is the winner; if this occurs when players do not have strategy cards, the player who is nearest the speaker (including the speaker) in clockwise order is the winner.</RuleText>
       <RuleText number='87.8'>If the game ends because the speaker cannot reveal an objective card, the player with the most victory points is the winner. If one or more players are tied for having the most victory points, the tied player who is first in initiative order is the winner.</RuleText>
     </RuleSection>
 
