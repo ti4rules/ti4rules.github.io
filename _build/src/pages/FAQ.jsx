@@ -50,7 +50,7 @@ export default () => (
     </RuleSection>
 
     <RuleSection title='Politcal Favor (Xxcha)'>
-      <p>The text of the Xxcha promissory note “Political Favor” should read as follows: “<Errata>When</Errata> an agenda is revealed: Remove 1 token from the Xxcha player’s strategy pool and return it to his reinforcements. Then, discard the revealed agenda and reveal 1 agenda from the top of the deck. Players vote on this agenda instead. Then, return this card to the Xxcha player.”</p>
+      <p>The text of the Xxcha promissory note “Political Favor” should read as follows: “When an agenda is revealed: Remove 1 token from the Xxcha player’s strategy pool and return it to their reinforcements. Then, discard the revealed agenda and reveal 1 agenda from the top of the deck. Players vote on this agenda instead. Then, return this card to the Xxcha player.”</p>
     </RuleSection>
 
     <RuleSection title='Unstable Planet (Action Card)'>
@@ -79,14 +79,14 @@ export default () => (
       <Answer>Yes. Any effect that moves a ship allows that ship to transport units in its system, if it has available capacity.</Answer>
       <Question>Can you intentionally reveal hidden information to another player, such as an action card from your hand or your secret objective?</Question>
       <Answer>Yes. This information is kept hidden by default, but it is permissible to reveal it to another player or players as a strategic option.</Answer>
-      <Question>What happens to infantry that would be placed on a planet in any player’s home system by the effect of the “Infantry II” unit upgrade technology if the player does not own any planets in his home system?</Question>
+      <Question>What happens to infantry that would be placed on a planet in any player’s home system by the effect of the “Infantry II” unit upgrade technology if that player does not own any planets in their home system?</Question>
       <Answer>When those infantry would be placed on a home planet, they are returned to that player’s reinforcements instead.</Answer>
       <Question>Can a card (such as a promissory note) with a specified timing of a certain window that is acquired from a transaction during that window be played immediately?</Question>
       <Answer>Yes. For example, a promissory note with “At the start of your turn:” timing may be immediately played if the transaction occurred within the “start of turn” timing window.</Answer>
       <Question>When the player resolving the “Trade” strategy card selects another player to resolve the “Trade” secondary ability for free, does the player resolving the effect for free do so during the execution of the primary ability or the secondary ability?</Question>
-      <Answer>He <strong>must</strong> resolve this effect during the resolution of the secondary ability as normal, but he does not have to spend a command token to do so.</Answer>
-      <Question>If a player would refresh his commodities but already has the maximum amount, can another player still play that player’s “Trade Agreement” promissory note against him?</Question>
-      <Answer>Yes. Even if that player gains zero commodities when he refreshes them, his “Trade Agreement” may still be played against him.</Answer>
+      <Answer>They <strong>must</strong> resolve this effect during the resolution of the secondary ability as normal, but they do not have to spend a command token to do so.</Answer>
+      <Question>If a player would refresh their commodities but already has the maximum amount, can another player still play that player’s “Trade Agreement” promissory note against them?</Question>
+      <Answer>Yes. Even if that player gains zero commodities when their commodities are refreshed, their “Trade Agreement” may still be played against them.</Answer>
       <Question>Does the “Neural Motivator” technology give an additional action card for both the standard status phase draw as well as the “Minister of Policy” agenda? What about the Yssaril’s “Scheming” faction ability?</Question>
       <Answer>No. “Neural Motivator” gives only one action card in addition to the standard status phase draw. It is not triggered additional times by other abilities. The Yssaril’s “Schemeing” ability, however, is triggered each time that action cards are drawn.</Answer>
       <Question>Does the “Political Secret” promissory note disable passive/ mandatory faction abilities, such as the Barony of Letnev’s “Armada” faction ability, when it is used against that player?</Question>
@@ -110,7 +110,7 @@ export default () => (
       <Question>When a “Research Team” agenda that is attached to a planet is used to ignore a prerequisite, is the planet exhausted?</Question>
       <Answer>No. The agenda is exhausted to ignore the prerequisite, not the planet.</Answer>
       <Question>Can a player cast ‘0’ votes “For” or “Against” on an agenda instead of abstaining, in order to take advantage of effects associated with that option?</Question>
-      <Answer>No. A vote of ‘0’ is the same as abstaining; that player gains no positive or negative effects of voting “For” or “Against” on an agenda if he contributed ‘0’ votes.</Answer>
+      <Answer>No. A vote of ‘0’ is the same as abstaining; that player gains no positive or negative effects of voting “For” or “Against” on an agenda if they contributed ‘0’ votes.</Answer>
       <Question>Does the “Enforced Travel Ban” agenda prevent “Space Cannon” usage through wormholes?</Question>
       <Answer>No. “Enforce Travel Ban” does not prevent “Space Cannon” usage.</Answer>
       <Question>If the “Classified Document Leaks” agenda is discarded, what happens?</Question>
@@ -138,7 +138,7 @@ export default () => (
       <Answer>No, “Courageous to the End” does not produce hits.</Answer>
       <Question>Can two “Direct Hit” action cards be played by the same player during the same round of combat against different targets?</Question>
       <Answer>Yes. Because the two “Direct Hit” cards are targeting different targets, this is allowed.</Answer>
-      <Question>During space combat, can each player play a “Shields Holding” action card to cancel hits against his units, even though they are being played during the same timing window?</Question>
+      <Question>During space combat, can each player play a “Shields Holding” action card to cancel hits against their own units, even though the cards are being played during the same timing window?</Question>
       <Answer>Yes. Because each of the “Shields Holding” cards are targeting different sets of hits (one set against player A and one set against player B), it is legal to play both cards.</Answer>
       <Question>Can the “Shields Holding” action card be used to cancel hits from abilities that occur during combat, such as “Ambush,” “Dimensional Splicer,” and “Devotion?”</Question>
       <Answer>Yes. “Shields Holding” may be used to cancel hits that are produced by these abilities.</Answer>
@@ -148,7 +148,7 @@ export default () => (
       <Answer>No. The “Distinguished Councilor” action card can only be played after you vote during the “Vote” step of resolving an agenda.</Answer>
       <Question>When during the action card playing process is a “Sabotage” card played?</Question>
       <Answer>The “Sabotage” action can be played after card targets (such as units, planets, systems, cards, outcomes, or players) have been decided on, but must be played before any effects have been resolved, votes have been cast, or any dice have been rolled.</Answer>
-      <Question>Can abilities that destroy units, such as the “Lucky Shot” action card, be used by a player against his own units or planets?</Question>
+      <Question>Can abilities that destroy units, such as the “Lucky Shot” action card, be used by a player against their own units or planets?</Question>
       <Answer>No. “Lucky Shot” and other similar effects can only be used against other player’s units and planets.</Answer>
       <Question>Can multiple rider action cards be played by the same player on a single agenda? If so, can they be played on different outcomes?</Question>
       <Answer>Yes to both. A player may play multiple rider action cards on a single agenda, and they may be played on opposing outcomes.</Answer>
@@ -179,7 +179,7 @@ export default () => (
       <Question>Do infantry involved in a space combat due to the effects of “The Alastor” flagship cease participation in combat if the Alastor is destroyed?</Question>
       <Answer>No. Infantry that are committed to the space combat due to the effects of “The Alastor” continue to participate until the end of the combat, even if “The Alastor” is destroyed.</Answer>
       <Question>Can the Nekro Virus have both a standard and a faction-specific unit upgrade of the same type?</Question>
-      <Answer>Yes. Only the faction-specific unit upgrade technology will be in effect, but should the Nekro lose the faction-specific upgrade technology that is being copied by the “Valefar Assimilator,” he would revert to the standard unit upgrade technology that was previously inactive.</Answer>
+      <Answer>Yes. Only the faction-specific unit upgrade technology will be in effect, but should the Nekro lose the faction-specific upgrade technology that is being copied by the “Valefar Assimilator,” they would revert to the standard unit upgrade technology that was previously inactive.</Answer>
       <Question>If the Nekro Virus owns multiple unit upgrade technologies of the same type, such as “Dreadnought II” and “Exotrireme II,” does each one count toward the “Develop Weaponry” and “Revolutionize Warfare” objectives?</Question>
       <Answer>No. Only one upgrade of a given type counts toward those objectives.</Answer>
       <Question>Do infantry involved in a space combat via the effects of “The Alastor” flagship count toward the ships required to use the “Assault Cannon” technology?</Question>
@@ -189,7 +189,7 @@ export default () => (
     </RuleSection>
 
     <RuleSection title='The Emirates of Hacan'>
-      <Question>Does the Hacan player have to initiate negotiations in order to transact with a player who is not his neighbor?</Question>
+      <Question>Does the Hacan player have to initiate negotiations to perform a transaction with a player who is not their neighbor?</Question>
       <Answer>So long as the active player is involved in the transaction, either player may suggest the opening of negotiations, on either player’s turn.</Answer>
     </RuleSection>
 
@@ -202,7 +202,7 @@ export default () => (
       <Question>Can the Creuss Promissory note still be used if the Creuss have not researched “Wormhole Generator”?</Question>
       <Answer>Yes, the promissory not does not require that the “Wormhole Generator” technology have been researched.</Answer>
       <Question>Can the “Light/Wave Deflector” technology be used to move through a wormhole created by the Ghosts of Creuss’ “Hil Colish” flagship?</Question>
-      <Answer>Yes, “Light/Wave Deflector” would allow a player other than the Ghosts of Creuss to move his fleet through the “Hil Colish’s” system into Creuss system or the Creuss Gate system.</Answer>
+      <Answer>Yes, “Light/Wave Deflector” allows a player other than the Ghosts of Creuss to move their fleet through the “Hil Colish’s” system into the Creuss home system or the Creuss Gate system.</Answer>
       <Question>If the “Hil Colish” moves before other ships and is returned to reinforcements by a gravity rift, can other ships still use its delta wormhole to reach the active system?</Question>
       <Answer>No, the wormhole ceases to exist when the “Hil Colish” is returned to reinforcements.</Answer>
     </RuleSection>
@@ -226,11 +226,11 @@ export default () => (
     </RuleSection>
 
     <RuleSection title='The Mentak Coalition'>
-      <Question>Can the Mentak Coalition use the “Salvage Operations” faction- specific technology to produce a war sun that was destroyed if they do not personally have war sun technology?</Question>
+      <Question>Can the Mentak Coalition use the “Salvage Operations” faction-specific technology to produce a war sun that was destroyed if they do not personally have war sun technology?</Question>
       <Answer>No. Without war sun technology, they cannot produce a war sun, even using “Salvage Operations”.</Answer>
-      <Question>Can the Mentak Coalition use the “Salvage Operations” faction- specific technology to produce their own flagship after destroying an opponent’s flagship?</Question>
+      <Question>Can the Mentak Coalition use the “Salvage Operations” faction-specific technology to produce their own flagship after destroying an opponent’s flagship?</Question>
       <Answer>Yes, even though the units are technically different, they share the flagship unit type.</Answer>
-      <Question>Can the Mentak Coalition use the “Salvage Operations” faction- specific technology to produce infantry after a combat against the Nekro Virus flagship “The Alastor” in which Nekro Virus infantry were treated like ships and were subsequently destroyed?</Question>
+      <Question>Can the Mentak Coalition use the “Salvage Operations” faction-specific technology to produce infantry after a combat against the Nekro Virus flagship “The Alastor” in which Nekro Virus infantry were treated like ships and were subsequently destroyed?</Question>
       <Answer>No, the infantry do not count as ships once the combat is over.</Answer>
       <Question>Can the Mentak Coalition use the “Pillage” faction ability to steal trade goods when they are neighbors with another faction as a result of the “Lazax Gate Folding” faction technology or “Quantum Entanglement” faction ability?</Question>
       <Answer>Yes, even in the case of “Quantum Entanglement” only being active from the Creuss’ point of view, because the ‘neighbor’ status is active as a result of the ability, the Mentak may use their “Pillage” in these situations.</Answer>
