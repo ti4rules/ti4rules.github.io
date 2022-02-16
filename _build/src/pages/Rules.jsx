@@ -393,7 +393,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
           <li>A player does not spend a command token to resolve the secondary ability of the “Leadership” strategy card.</li>
         </ul>
       </RuleText>
-      <RuleText number='19.6'>If a game effect would place a player’s command token into a system where he already has one, he returns the second command token to his reinforcements.</RuleText>
+      <RuleText number='19.6'>If a game effect would place a player’s command token in a system where he already has one, he places the token in his reinforcements instead. Any effects that resolve by placing that token are resolved as normal.</RuleText>
     </RuleSection>
 
     <RuleSection
