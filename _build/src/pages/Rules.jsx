@@ -44,8 +44,8 @@ export default ({ search }) => (
       <RuleText number='1.16'>Effects that occur “when” an event happens take priority over effects that occur “after” an event happens.</RuleText>
       <RuleText number='1.17'>If an ability uses the word “then,” a player must resolve the effect that occurs before the word “then” or they cannot resolve the effect that occurs after the word “then.”</RuleText>
       <RuleText number='1.18'>Each ability can be resolved once for each occurrence of that ability’s timing event. For example, if an ability is resolved “At the start of combat,” it can be resolved at the start of each combat.</RuleText>
-      <RuleText number='1.19'>If there are multiple abilities that players wish to resolve at thesame time during the <strong>action phase</strong>, each player takes a turn resolving an ability in initiative order, beginning with the active player. This process continues until each player has resolved each ability that they wish to resolve during that window.</RuleText>
-      <RuleText number='1.20'>If there are multiple abilities that players wish to resolve at the same time during the <strong>strategy</strong> or <strong>agenda phases</strong>, players take turns resolving abilities starting with the speaker and proceeding clockwise. This process continues until each player has resolved each ability that they wish to resolve during that window.</RuleText>
+      <RuleText number='1.19'>If there are multiple abilities that players wish to resolve at thesame time during the action phase, each player takes a turn resolving an ability in initiative order, beginning with the active player. This process continues until each player has resolved each ability that they wish to resolve during that window.</RuleText>
+      <RuleText number='1.20'>If there are multiple abilities that players wish to resolve at the same time during the strategy or agenda phases, players take turns resolving abilities starting with the speaker and proceeding clockwise. This process continues until each player has resolved each ability that they wish to resolve during that window.</RuleText>
       <RuleText number='1.21' subheading='Component-Specific Rules' />
       <RuleText number='1.22'>The opening paragraph of each ability found on an action card describes when a player can resolve that card’s ability.</RuleText>
       <RuleText number='1.23'>The opening paragraph of most abilities found on promissory notes describes when a player can resolve that card’s ability.
@@ -77,7 +77,7 @@ export default ({ search }) => (
       <RuleText number='2.1'>Each player draws one action card during each status phase.</RuleText>
       <RuleText number='2.2'>Players can draw action cards by resolving the primary andsecondary abilities of the “Politics” strategy card.</RuleText>
       <RuleText number='2.3'>When a player draws an action card, they take the top card from the action card deck and add it to their hand of action cards.</RuleText>
-      <RuleText number='2.4'>Each player’s hand can have a maximum of <strong>seven action cards</strong>. If a player ever has more than seven action cards, that player must choose seven cards to keep and discard the rest.
+      <RuleText number='2.4'>Each player’s hand can have a maximum of seven action cards. If a player ever has more than seven action cards, that player must choose seven cards to keep and discard the rest.
         <ul>
           <li>A game effect can increase or decrease the number of cards a player’s hand can have.</li>
         </ul>
@@ -140,8 +140,8 @@ export default ({ search }) => (
       related={['Movement', 'Tactical Action']}>
       <RuleText>The active system is the system that is activated during a tactical action.</RuleText>
       <RuleText number='5.1'>When a player performs a tactical action, they activate a system by placing a command token from their tactic pool in that system. That system is the active system.</RuleText>
-      <RuleText number='5.2'>A player <strong>cannot</strong> activate a system that already contains one of their command tokens.</RuleText>
-      <RuleText number='5.3'>A player <strong>can</strong> activate a system that contains command tokens that match other players’ factions.</RuleText>
+      <RuleText number='5.2'>A player cannot activate a system that already contains one of their command tokens.</RuleText>
+      <RuleText number='5.3'>A player can activate a system that contains command tokens that match other players’ factions.</RuleText>
       <RuleText number='5.4'>A system remains the active system for the duration of the tactical action during which it was activated.</RuleText>
     </RuleSection>
 
@@ -666,7 +666,7 @@ export default ({ search }) => (
       <RuleText>Some cards can be exhausted. A player cannot resolve abilities or spend the resources or influence of an exhausted card.</RuleText>
       <RuleText number='34.1'>To exhaust a card, a player flips the card facedown.</RuleText>
       <RuleText number='34.2'>During the “Ready Cards” step of the status phase, each player readies all of their exhausted cards by flipping those cards faceup.</RuleText>
-      <RuleText number='34.3'>A player exhausts their planet cards to spend <strong>either</strong> the resources or influence on that card.</RuleText>
+      <RuleText number='34.3'>A player exhausts their planet cards to spend either the resources or influence on that card.</RuleText>
       <RuleText number='34.4'>Abilities, including some found on technology cards, may instruct a player to exhaust a card to resolve those abilities. If a card is already exhausted, it cannot be exhausted again.
         <ul>
           <li>Passive abilities on an exhausted card are still in effect while that card is exhausted.</li>
@@ -1447,7 +1447,7 @@ export default ({ search }) => (
       title='Space Cannon (Unit Ability)'
       related={['Active System', 'Attacker', 'Defender', 'Destroyed', 'Invasion', 'Sustain Damage', 'Movement', 'Tactical Action']}>
       <RuleText>A unit that has the “Space Cannon” ability can use it during two different steps of a player’s tactical action: after the “Move Ships” substep (Space Cannon Offense) and during an invasion (Space Cannon Defense).</RuleText>
-      <RuleText number='77.1'>A player is <strong>not</strong> required to be the active player to use their “Space Cannon” ability of their units.</RuleText>
+      <RuleText number='77.1'>A player is not required to be the active player to use their “Space Cannon” ability of their units.</RuleText>
       <RuleText number='77.2' subheading='Space Cannon Offense'>During a tactical action, after the “Move Ships” substep of the “Movement” step, beginning with the active player and proceeding clockwise, each player may use the “Space Cannon” ability of each of their units in the active system by performing the following steps:</RuleText>
       <RuleText number='77.3'>STEP 1 — ROLL DICE: The player rolls dice for each of their units in the active system that has the “Space Cannon” ability; this is a space cannon roll. One hit is produced for each result that is equal to or greater than the unit’s “Space Cannon” value.
         <ul>
@@ -1760,7 +1760,7 @@ targeted by “Space Cannon” must choose and destroy one of their ships in the
         </ul>
       </RuleText>
       <RuleText number='90.4'>Any technology card that a player has not gained remains in their technology deck. A player can look through their technology deck at any time.</RuleText>
-      <RuleText number='90.5'>If an ability instructs a player to <strong>gain</strong> a technology, they do not research it; they take it from their technology deck and place it in their play area, ignoring prerequisites.</RuleText>
+      <RuleText number='90.5'>If an ability instructs a player to gain a technology, they do not research it; they take it from their technology deck and place it in their play area, ignoring prerequisites.</RuleText>
       <RuleText number='90.6'>Some technologies are unit upgrades. Unit upgrades share a name with a unit that is printed on a player’s faction sheet.
         <ul>
           <li>Players place any unit upgrades they gain faceup on their faction sheets, covering the unit that shares a name with that upgrade card.</li>
@@ -1887,7 +1887,7 @@ targeted by “Space Cannon” must choose and destroy one of their ships in the
         </ul>
       </RuleText>
       <RuleText number='94.5'>Players can resolve a transaction as part of a deal.</RuleText>
-      <RuleText number='94.6'>While resolving <strong>each</strong> agenda during the agenda phase, a player may perform one transaction with each other player.</RuleText>
+      <RuleText number='94.6'>While resolving each agenda during the agenda phase, a player may perform one transaction with each other player.</RuleText>
     </RuleSection>
 
     <RuleSection
@@ -1966,7 +1966,7 @@ targeted by “Space Cannon” must choose and destroy one of their ships in the
       <RuleText number='99.2'>STEP 2 — The active player can redistribute their commandtokens.</RuleText>
       <RuleText number='99.3'>After the active player resolves the primary ability of the “Warfare” strategy card, each other player, beginning with the player to the left of the active player and proceeding clockwise, may spend one command token from their strategy pool to resolve the “Production” ability of one space dock in their home system.
         <ul>
-          <li>The command token is <strong>not</strong> placed in their home system.</li>
+          <li>The command token is not placed in their home system.</li>
         </ul>
       </RuleText>
     </RuleSection>
