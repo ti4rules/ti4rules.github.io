@@ -341,10 +341,11 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       <RuleText>Capacity is an attribute of some units that is presented on those units’ faction sheets and technology cards.</RuleText>
       <RuleText number='16.1'>A unit’s capacity value indicates the maximum combined number of fighters and ground forces that it can transport.</RuleText>
       <RuleText number='16.2'>The combined capacity values of a player’s ships in a system determine the number of fighters and ground forces he can have in that system’s space area.</RuleText>
-      <RuleText number='16.3'>If a player has more fighters and ground forces in the space area of a system than the total capacity of his ships in that system, he must destroy the excess units of his choice.
+      <RuleText number='16.3'>If a player has more fighters and ground forces in the space area of a system than the total capacity of that player’s ships in that system, that player must remove the excess units.
         <ul>
+          <li>A player can choose which of their excess units to remove.</li>
           <li>Ground forces on planets do not count against capacity.</li>
-          <li>A player’s fighters and ground forces do not count against capacity during combat. At the end of combat, he must destroy the excess units.</li>
+          <li>A player’s fighters and ground forces do not count against capacity during combat. At the end of combat, any excess units are removed and returned to that player’s reinforcements.</li>
         </ul>
       </RuleText>
       <RuleText number='16.4'>Fighters and ground forces are not assigned to specific ships, except while they are being transported.</RuleText>
@@ -810,9 +811,9 @@ secondary abilities of the “Politics” strategy card.</RuleText>
           <li>If the active player committed ground forces to more than one planet that contained units with a “Space Cannon” ability, the active player chooses the order in which those “Space Cannon” abilities are resolved.</li>
         </ul>
       </RuleText>
-      <RuleText number='44.4'>STEP 4—GROUND COMBAT: If the active player commits ground forces to land on a planet that contains another player’s ground forces, those players resolve a ground combat on that planet.
+      <RuleText number='44.4'>STEP 4—GROUND COMBAT: If the active player has ground forces on a planet in the active system that contains another player’s ground forces, those players resolve a ground combat on that planet.
         <ul>
-          <li>If players must resolve a combat on more than one planet, the active player chooses the order in which those combats are resolved.</li>
+        <li>If players must resolve a combat on more than one planet, the active player chooses the order in which those combats are resolved.</li>
         </ul>
       </RuleText>
       <RuleText number='44.5'>STEP 5—ESTABLISH CONTROL: The active player gains control of each planet he committed ground forces to that still contains at least one of his ground forces.
@@ -1163,7 +1164,7 @@ secondary abilities of the “Politics” strategy card.</RuleText>
       <RuleText>Some game effects instruct a player to reroll dice.</RuleText>
       <RuleText number='63.1'>When a die is rerolled, its new result is used instead of its previous result.</RuleText>
       <RuleText number='63.2'>The same ability cannot be used to reroll the same die multiple times, but multiple abilities can be used to reroll a single die.</RuleText>
-      <RuleText number='63.3'>Die rerolls must occur immediately after rolling the dice, before other abilities or dice rolls are resolved.</RuleText>
+      <RuleText number='63.3'>Die rerolls must occur after rolling the dice, before other abilities are resolved.</RuleText>
     </RuleSection>
 
     <RuleSection
@@ -1251,15 +1252,15 @@ secondary abilities of the “Politics” strategy card.</RuleText>
           <li>A player cannot announce a retreat if there is not at least one eligible system to retreat to.</li>
         </ul>
       </RuleText>
-      <RuleText number='67.5'>STEP 3—ROLL DICE: Each player rolls one die for each ship he has in the active system; this is called a combat roll. If a unit’s combat roll produces a result that is equal to or greater than that unit’s combat value, that result produces a hit.
+      <RuleText number='67.5'>STEP 3—ROLL DICE: Each player rolls one die for each ship they have in the active system; this is called a combat roll. If a unit’s combat roll produces a result that is equal to or greater than that unit’s combat value, that result produces a hit.
         <ul>
           <li>If a unit’s combat value contains two or more burst icons, the player rolls one die for each burst icon instead.</li>
-          <li>If a player has ships that have different combat values in the active system, he rolls these dice separately.</li>
+          <li>If a player has ships that have different combat values in the active system, that player rolls these dice separately.</li>
           <ul className='RuleText__ul-hyphen'>
-            <li>First, he should roll all dice for his units with a combat value of “1.” Then, he should roll all dice for his units with combat value of “2,” and then “3,” continuing in numerical order until he has rolled dice for each of his ships.</li>
-            <li>A player keeps track of the number of hits his combat rolls produce. The total number of hits he produces will destroy units during the “Assign Hits” step.</li>
-            <li>If a player has an ability that rerolls a die or affects a die after it is rolled, he must resolve that ability immediately after rolling the die. For example, if the player made a combat roll for his dreadnoughts, he must decide if he wants to use an ability to reroll those dice before making a combat roll for his destroyers.</li>
-            <li>The attacker makes all of his combat rolls during this step before the defender. This procedure is important for abilities that allow a player to reroll an opponent’s die.</li>
+            <li>First, that player should roll all dice for units with a combat value of “1.” Then, that player should roll all dice for units with combat value of “2,” and then “3,” continuing in numerical order until that player has rolled dice for each of their ships.</li>
+            <li>The player counts each hit their combat rolls produce. The total number of hits produced will destroy units during the “Assign Hits” step.</li>
+            <li>If a player has an ability that rerolls a die or affects a die after it is rolled, that player must resolve such an ability immediately after rolling all of their dice.</li>
+            <li>The attacker makes all of their combat rolls during this step before the defender. This procedure is important for abilities that allow a player to reroll an opponent’s die.</li>
           </ul>
         </ul>
       </RuleText>

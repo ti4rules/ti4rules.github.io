@@ -25,7 +25,8 @@ export default () => (
     </RuleSection>
 
     <RuleSection title='Diplomacy (Strategy Card)'>
-      <p>The text of the “Diplomacy” strategy card’s secondary ability should read as follows: “Spend 1 token from your strategy pool to ready up to 2 exhausted planets <Errata>you control</Errata>.”</p>
+      <p>The text of the “Diplomacy” strategy card’s primary ability should read as follows: “Choose 1 system other than the Mecatol Rex system that contains a planet you control; each other player places a command token from their reinforcements in that system. Then, ready up to 2 exhausted planets you control.”</p>
+      <p>The text of the “Diplomacy” strategy card’s secondary ability should read as follows: “Spend 1 token from your strategy pool to ready up to 2 exhausted planets you control.”</p>
     </RuleSection>
 
     <RuleSection title='Direct Hit (Action Card)'>
