@@ -15,3 +15,4 @@ rm -rf ../images
 rm -rf public
 npx gatsby build
 mv -f public/* ../
+echo "If you see an error with 'directory not empty', add that directory to the build script"
