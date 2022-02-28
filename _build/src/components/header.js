@@ -1,34 +1,36 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <div className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div className="container">
+      <Link to="/" className="navbar-brand Nav__brand">
+
+        <StaticImage
+          alt="logo"
+          className='Nav__logo'
+          height={20}
+          src="../images/logo.svg" />
+        TI4 Rules
+      </Link>
+
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+
+      <div className="collapse navbar-collapse" id="navbarResponsive">
+        <ul className="navbar-nav">
+          <Link to="/" className='nav-link'>Living Rules</Link>
+          <Link to="/faq" className='nav-link'>FAQ &amp; Errata</Link>
+          <Link to="/board" className='nav-link'>Board Setup</Link>
+          <Link to="/reference" className='nav-link'>Quick Reference</Link>
+          <Link to="/about" className='nav-link'>About</Link>
+        </ul>
+      </div>
     </div>
-  </header>
+  </div>
 )
 
 Header.propTypes = {

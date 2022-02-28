@@ -115,3 +115,12 @@ h1 {
 .RuleImageBlock__image {
     max-width: 50px;
 }
+
+.Nav__logo {
+  height: 20px;
+  vertical-align: sub !important;
+}
+
+.Nav__brand {
+  @include title-text;
+}
