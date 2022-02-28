@@ -1,18 +1,15 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle }) => (
   <div className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <div className="container">
       <Link to="/" className="navbar-brand Nav__brand">
 
-        <StaticImage
-          alt="logo"
+        <img
           className='Nav__logo'
-          height={20}
-          src="../images/logo.svg" />
+          src="./images/logo.svg" />
         TI4 Rules
       </Link>
 

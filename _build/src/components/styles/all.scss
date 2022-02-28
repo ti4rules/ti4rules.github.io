@@ -45,6 +45,11 @@ h1 {
   z-index: 1000;
 }
 
+.RulesPageNav__search, .RulesPageNav__search:focus {
+  background-color: #fff;
+  color: #000;
+}
+
 .RulesPageNav__search::-webkit-search-cancel-button {
   -webkit-appearance: searchfield-cancel-button;
 }
