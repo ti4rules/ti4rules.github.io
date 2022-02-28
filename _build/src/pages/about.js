@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 
 const AboutPage = () => (
   <Layout>
-    <Seo title="Page two" />
+    <Seo title="About" />
     <div className="container">
       <h1>About TI4 rules</h1>
       <p>This is a free tool to make it easier to lookup and share the rules for Twilight Imperium 4th Edition.</p>
