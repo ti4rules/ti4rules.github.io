@@ -29,13 +29,13 @@ const ReferencePage = () => (
             <p>There are three types of actions that players may perform during the action phase:</p>
 
             <h5>Strategic Action</h5>
-            <p>A player performs the primary action of his chosen strategy card. Then, other players perform the secondary ability of that card.</p>
+            <p>A player performs the primary action of their chosen strategy card. Then, other players perform the secondary ability of that card.</p>
 
             <h5>Component Action</h5>
-            <p>A player may perform an action granted to him by his faction sheet, a technology, or an action card.</p>
+            <p>A player may perform an action granted by their faction sheet, a technology, or an action card.</p>
 
             <h5>Tactical Action</h5>
-            <p>A player may perform a tactical action by spending a command token from his tactic pool. He resolves the following steps:</p>
+            <p>A player may perform a tactical action by spending a command token from their tactic pool. They resolve the following steps:</p>
             <ol>
               <li>Activation</li>
               <li>Movement
