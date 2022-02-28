@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g id="Winnu">
+        <g>
+            <path id="path4153" d="M1.722,5.344L5.395,5.715C6.903,4.228 8.4,4.015 8.4,4.015L9.968,0.5L11.576,4.169C13.259,4.475 14.305,5.591 14.305,5.591C14.305,5.591 16.862,5.375 18.036,5.313L16.151,8.002C16.151,8.002 16.379,11.257 16.029,11.782L18.315,14.74L14.575,14.215C14.575,14.215 13.088,15.526 11.515,16.007L9.938,19.5L8.376,16.149C8.376,16.149 5.748,15.216 5.333,14.276L1.716,14.709L3.967,11.598C3.967,11.598 3.625,8.801 4.127,8.342L1.722,5.344ZM10,6.219L10.722,8.749L13.275,8.109L11.444,10L13.275,11.891L10.722,11.251L10,13.781L9.278,11.251L6.725,11.891L8.556,10L6.725,8.109L9.278,8.749L10,6.219Z" style="fill:url(#_Radial1);stroke:black;stroke-width:0.3px;"/>
+            <g id="path4221" transform="matrix(0.122394,0,0,0.122394,-27.7399,-20.3461)">
+                <ellipse cx="273.486" cy="194.49" rx="9.304" ry="9.57" style="fill:rgb(239,214,87);stroke:black;stroke-width:2.45px;stroke-linejoin:round;"/>
+            </g>
+            <g id="path4221-4" transform="matrix(0.122394,0,0,0.122394,-27.7399,-20.3461)">
+                <ellipse cx="338.906" cy="191.965" rx="9.304" ry="9.57" style="fill:rgb(239,214,87);stroke:black;stroke-width:2.45px;stroke-linejoin:round;"/>
+            </g>
+            <g id="path4221-6" transform="matrix(0.122394,0,0,0.122394,-27.7399,-20.3461)">
+                <ellipse cx="371.736" cy="248.028" rx="9.304" ry="9.57" style="fill:rgb(239,214,87);stroke:black;stroke-width:2.45px;stroke-linejoin:round;"/>
+            </g>
+            <g id="path4221-40" transform="matrix(0.122394,0,0,0.122394,-27.7399,-20.3461)">
+                <ellipse cx="343.199" cy="302.576" rx="9.304" ry="9.57" style="fill:rgb(239,214,87);stroke:black;stroke-width:2.45px;stroke-linejoin:round;"/>
+            </g>
+            <g id="path4221-7" transform="matrix(0.122394,0,0,0.122394,-27.7399,-20.3461)">
+                <ellipse cx="272.489" cy="302.576" rx="9.304" ry="9.57" style="fill:rgb(239,214,87);stroke:black;stroke-width:2.45px;stroke-linejoin:round;"/>
+            </g>
+            <g id="path4221-5" transform="matrix(0.122394,0,0,0.122394,-27.7399,-20.3461)">
+                <ellipse cx="244.962" cy="248.281" rx="9.304" ry="9.57" style="fill:rgb(239,214,87);stroke:black;stroke-width:2.45px;stroke-linejoin:round;"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <radialGradient id="_Radial1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(4.25694,-3.78415,3.83617,4.31545,10.0187,9.99773)"><stop offset="0" style="stop-color:rgb(255,231,154);stop-opacity:1"/><stop offset="0.01" style="stop-color:rgb(219,108,87);stop-opacity:1"/><stop offset="0.99" style="stop-color:rgb(202,51,56);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(70,27,30);stop-opacity:1"/></radialGradient>
+    </defs>
+</svg>
