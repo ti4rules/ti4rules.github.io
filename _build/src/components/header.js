@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
 
         <img
           className='Nav__logo'
-          src="./images/logo.svg" />
+          src="/images/logo.svg" />
         TI4 Rules
       </Link>
 
