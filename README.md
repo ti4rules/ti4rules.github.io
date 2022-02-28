@@ -5,15 +5,16 @@ TI4 Rules is a free tool to make it easier to lookup and share the rules for Twi
 ## Setup
 
 TI4 Rules has been built with...
-* Node v11.1.0
-* Yarn 1.12.1
+* Node v16.6.1
 
-Once these are installed, change to the `_build` directory and then you can simply do the following to see a local version of the site:
+Once these are installed, run "npm install" in the root directory of this project. This will install the Gatsby CLI tools.
+
+From there, change to the `_build` directory and then you can simply do the following to see a local version of the site:
 
 ```
-$ yarn             # installs all dependencies
-$ yarn webpack-dev # starts a local webpack dev server, handy if you are building locally
-$ yarn build       # generates the production HTML/CSS/JS
+$ npm install        # installs all dependencies
+$ npx gatsby develop # starts a local webpack dev server, handy if you are building locally
+$ ./build.sh         # builds the production site
 ```
 
 ## Making Changes
