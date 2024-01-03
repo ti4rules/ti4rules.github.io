@@ -49,14 +49,14 @@ export default ({ search }) => (
       <RuleText number='1.21' subheading='Component-Specific Rules' />
       <RuleText number='1.22'>The opening paragraph of each ability found on an action card describes when a player can resolve that card’s ability.</RuleText>
       <RuleText number='1.23'>The opening paragraph of most abilities found on promissory notes describes when a player can resolve that card’s ability.
-      <ul>
+        <ul>
           <li>Some promissory notes have abilities that trigger as soon as a player receives the card.</li>
         </ul>
       </RuleText>
       <RuleText number='1.24'>Abilities on agenda cards correspond to an outcome. Players resolve these abilities during the agenda phase after players vote for a particular outcome.</RuleText>
       <RuleText number='1.25'>Each faction has faction abilities presented on its faction sheet. Each faction’s flagship has one or more unique abilities. Some abilities provide players with perpetual effects.</RuleText>
       <RuleText number='1.26'>Some units have unit abilities. These abilities are named and presented above a unit’s attributes on a player’s faction sheet or on a unit upgrade card. Each unit ability has unique rules for when a player can resolve that ability. The following abilities are unit abilities:
-      <ul>
+        <ul>
           <li>Anti-Fighter Barrage</li>
           <li>Bombardment</li>
           <li>Deploy</li>
@@ -84,7 +84,7 @@ export default ({ search }) => (
       </RuleText>
       <RuleText number='2.5'>A player’s action cards remain hidden from other players until they are played.</RuleText>
       <RuleText number='2.6'>The first paragraph of each action card is presented in bold text and describes the timing of when that card’s ability can be resolved.
-      <ul>
+        <ul>
           <li>If an action card contains the word “Action,” a player must use a component action during the action phase to resolve the ability. A player cannot resolve a component action if they cannot completely resolve its ability.</li>
           <li>Multiple action cards with the same name cannot be played during a single timing window to affect the same units or game effect. Canceled cards do not count as being played.</li>
         </ul>
@@ -371,7 +371,7 @@ export default ({ search }) => (
         </ul>
       </RuleText>
       <RuleText number='17.3'>If a player captures a fighter or infantry, it is placed in its reinforcements instead of on the capturing player’s faction sheet; the capturing player places a fighter or infantry token from the supply on their faction sheet instead.</RuleText>
-      <RuleText number='17.4'>Captured fighters and infantry do not belong to any player and are returned only when an ability instructs the capturing player to do so. 
+      <RuleText number='17.4'>Captured fighters and infantry do not belong to any player and are returned only when an ability instructs the capturing player to do so.
         <ul>
           <li>Captured fighters and infantry cannot be returned as part of a transaction.</li>
           <li>Captured fighters and infantry are not returned as the result of a blockade. </li>
@@ -437,7 +437,7 @@ export default ({ search }) => (
       <RuleText number='21.2'>The commodity value on a player’s faction sheet indicates the maximum number of commodities that player can have.</RuleText>
       <RuleText number='21.3'>When an effect instructs a player to replenish commodities, that player takes the number of commodity tokens necessary so that the amount of commodities that player has equals the commodity value on their faction sheet. Then, those tokens are placed faceup in the commodity area of that player’s faction sheet.</RuleText>
       <RuleText number='21.4'>When a player replenishes commodities, that player takes the commodity tokens from the supply.</RuleText>
-      <RuleText number='21.5'>Players can trade commodities following the rules for transactions. When a player receives a commodity from another player, the player who received that token converts it into a trade good by placing it in the trade good area of their command sheet with the trade good side faceup. 
+      <RuleText number='21.5'>Players can trade commodities following the rules for transactions. When a player receives a commodity from another player, the player who received that token converts it into a trade good by placing it in the trade good area of their command sheet with the trade good side faceup.
         <ul>
           <li>That token is no longer a commodity token; it is a trade good token.</li>
           <li>A player can trade commodity tokens before resolving a game effect that allows them to replenish commodities.</li>
@@ -747,7 +747,7 @@ export default ({ search }) => (
       title='Frontier Tokens'
       related={['Exploration']}>
       <RuleText>Frontier tokens can be explored for a variety of game effects.</RuleText>
-      <RuleText number='38.1'>Frontier tokens are placed on the game board during setup. One frontier token is placed in each system that does not contain any planets. 
+      <RuleText number='38.1'>Frontier tokens are placed on the game board during setup. One frontier token is placed in each system that does not contain any planets.
         <ul>
           <li>Frontier tokens are not placed on hyperlane tiles.</li>
           <li>A system cannot have more than one frontier token.</li>
@@ -930,10 +930,10 @@ export default ({ search }) => (
       </RuleText>
       <RuleText number='49.4'>STEP 4 — GROUND COMBAT: If the active player has ground forces on a planet in the active system that contains another player’s ground forces, those players resolve a ground combat on that planet.
         <ul>
-        <li>If players must resolve a combat on more than one planet, the active player chooses the order in which those combats are resolved.</li>
+          <li>If players must resolve a combat on more than one planet, the active player chooses the order in which those combats are resolved.</li>
         </ul>
       </RuleText>
-      <RuleText number='49.5'>STEP 5 — ESTABLISH CONTROL: The active player gains control of each planet they committed ground forces to if that planet still contains at least one of their ground forces. 
+      <RuleText number='49.5'>STEP 5 — ESTABLISH CONTROL: The active player gains control of each planet they committed ground forces to if that planet still contains at least one of their ground forces.
         <ul>
           <li>When a player gains control of a planet, any structures on the planet that belong to other players are immediately destroyed.</li>
           <li>When a player gains control of a planet, they gain the planet card that matches that planet and exhaust that card.</li>
@@ -1144,7 +1144,7 @@ export default ({ search }) => (
         </ul>
       </RuleText>
       <RuleText number='61.6'>A player can score a maximum of one public objective and one secret objective during each status phase.</RuleText>
-      <RuleText number='61.7'>A player can score any number of objectives during the agenda phase or during a turn of the action phase; however, they can only score one objective during or after each combat. 
+      <RuleText number='61.7'>A player can score any number of objectives during the agenda phase or during a turn of the action phase; however, they can only score one objective during or after each combat.
         <ul>
           <li>A player can score an objective during both the space combat and the ground combat during the same tactical action.</li>
         </ul>
@@ -1263,7 +1263,7 @@ export default ({ search }) => (
       title='Producing Units'
       related={['Blockaded', 'Cost', 'Fighter Tokens', 'Infantry Tokens', 'Production', 'Space Dock', 'Tactical Action']}>
       <RuleText>The primary way that a player produces new units is by resolving the “Production” abilities of existing units during a tactical action. However, other game effects also allow players to produce units.</RuleText>
-      <RuleText number='67.1'>Each unit that a player can produce has a cost value presented on its faction sheet or technology card. To produce a unit, a player must spend a number of resources equal to or greater than the cost value of the unit they are producing. 
+      <RuleText number='67.1'>Each unit that a player can produce has a cost value presented on its faction sheet or technology card. To produce a unit, a player must spend a number of resources equal to or greater than the cost value of the unit they are producing.
         <ul>
           <li>Spent resources must come from planets or trade goods that are controlled by the player who is producing the units.</li>
           <li>Any resources spent in excess of a unit’s cost are lost.</li>
@@ -1279,8 +1279,8 @@ export default ({ search }) => (
       <RuleText number='67.3'>When a player produces a unit through the use of their units’ “Production” abilities during a tactical action, that player follows the rules of the “Production” ability to determine where in the active system the units can be placed.</RuleText>
       <RuleText number='67.4'>When a player produces a unit through an ability outside of the tactical action, that ability will state how many units that player can produce and where that player can place those units.
         <ul>
-          <li>A player cannot produce a unit on a planet they do not control.</li>    
-          <li>If an ability allows a player to produce a unit in a system, they may produce that unit in the space area or on a planet they control in that system. </li>    
+          <li>A player cannot produce a unit on a planet they do not control.</li>
+          <li>If an ability allows a player to produce a unit in a system, they may produce that unit in the space area or on a planet they control in that system. </li>
         </ul>
       </RuleText>
       <RuleText number='67.5'>A player is limited by the number of units in their reinforcements.
@@ -1458,8 +1458,7 @@ export default ({ search }) => (
         </ul>
       </RuleText>
       <RuleText number='77.4'>This ability can be used even if no ships were moved during the “Move Ships” step.</RuleText>
-      <RuleText number='77.5'>STEP 2 — ASSIGN HITS: The player whose units have been
-targeted by “Space Cannon” must choose and destroy one of their ships in the active system for each hit result produced against their units.
+      <RuleText number='77.5'>STEP 2 — ASSIGN HITS: The player whose units have been targeted by “Space Cannon” must choose and destroy one of their ships in the active system for each hit result produced against their units.
         <ul>
           <li>Players other than the active player must target the active player’s units.</li>
           <li>If the active player is using the “Space Cannon” ability of their units, they choose a player who has ships in the active system. That player must choose and destroy one of their ships in the active system for each hit the space cannon roll produced.</li>
@@ -1991,14 +1990,14 @@ targeted by “Space Cannon” must choose and destroy one of their ships in the
     </RuleSection>
 
     <RuleSection
-      number='10'
+      number='101'
       title='Wormholes'
       related={['Adjacency', 'Movement', 'Neighbors', 'System Tiles', 'Wormhole Nexus']}>
       <RuleText>Some systems contain wormholes. Systems that contain identical wormholes are adjacent.</RuleText>
-      <RuleText number='10.1'>There are two basic types of wormholes: alpha and beta.</RuleText>
-      <RuleText number='10.2'>PDS units that have been upgraded by the “PDS II—Deep Space Cannon” unit upgrade technology can use their “Space Cannon” abilities through wormholes.</RuleText>
-      <RuleText number='10.3'>Players can be neighbors and perform transactions through wormholes.</RuleText>
-      <RuleText number='10.4'>There are two advanced types of wormhole: delta and gamma. These wormholes follow all other wormhole rules.
+      <RuleText number='101.1'>There are two basic types of wormholes: alpha and beta.</RuleText>
+      <RuleText number='101.2'>PDS units that have been upgraded by the “PDS II—Deep Space Cannon” unit upgrade technology can use their “Space Cannon” abilities through wormholes.</RuleText>
+      <RuleText number='101.3'>Players can be neighbors and perform transactions through wormholes.</RuleText>
+      <RuleText number='101.4'>There are two advanced types of wormhole: delta and gamma. These wormholes follow all other wormhole rules.
         <ul>
           <li>The delta wormholes are present on the Creuss Gate system tile and the Ghosts of Creuss home system tile.</li>
           <li>The gamma wormholes are present on the wormhole nexus and can be discovered during exploration.</li>
